@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Application</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="https://kit.fontawesome.com/e06675ece4.js" crossorigin="anonymous"></script>
+
+    
 </head>
+
 <body>
-   <h1>Todo App</h1> 
+    <div class="container">
+        <h1>Todo App</h1>
+        <input type="text" value="Add a item"><button class="add">Add Todo</button>
 
-   <input type="text"><button>Add Todo</button>
-
-   <ul>
-       <li>Learn JavaScript</li>
-   </ul>
+        <ul>
+            <li>Learn JavaScript<i class="far fa-trash-alt remove"></i></li>
+        </ul>
+    </div>
+    <script src="todo.js"></script>
 </body>
+
 </html>
