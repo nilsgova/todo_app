@@ -22,7 +22,8 @@ function getToDos() {
         .then(data => {
             const todos = data.todos;
             todos.forEach(todo => {
-                addItem({todo});
+                const data = {todo}
+                addItem(data);
             });
         })
 }
