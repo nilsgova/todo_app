@@ -35,7 +35,7 @@ li {
 }
 
 input[type=text] {
-    width: 75%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -47,6 +47,13 @@ input[type=text] {
     color: white;
     text-align: center;
     font-size: 1.2em;
+}
+
+input:focus{
+    background-color: #c91133;
+    color: white;
+    outline: none;
+    border-bottom: none;
 }
 
 
@@ -62,10 +69,15 @@ input[type=text] {
     transition: 0.1s;
 }
 
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
 .add {
     padding: 10px 0;
-    width: 20%;
-    margin: 0 auto;
+    width: 150px;
+    margin: 10px auto;
     background-color: transparent;
     border: 1px solid white;
     color: white;
